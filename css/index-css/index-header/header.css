@@ -2,7 +2,7 @@
     display: flex;
     position: absolute;
     width: 20%;
-    background-color: red;
+    background-color: #990000;
     margin: 0 0 0 750px;
     justify-content: center;
     border-bottom-right-radius: 20px;
@@ -20,6 +20,6 @@
 .navigation__categories__login {
     justify-content: center;
     width: 80px;
-    height: 70px;
+    height: 80px;
     border-radius: 60px;
 }
