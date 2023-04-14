@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./root.css">
-    <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="./css/index-css/index-header/header.css">
-    <link rel="stylesheet" href="./css/index-css/index-header/rpg.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/rpg.css">
+    <link rel="stylesheet" href="./css/main-popup.css">
     <title>Document</title>
 </head>
 <body>
     <header class="navigation">
-        <div class="navigation__categories">
-            <div class="navigation__categories__window">
-                <span class="navigation__categories__window__text -rpg">RPG's</span>    
-            </div>
+            <span class="navigation__categories__window__text -rpg">RPG's</span>    
             <button class="navigation__categories__login">
                 <img class="navigation__login__icon" src="./img/profilecria.png" alt="">
             </button>
-        </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="item -border"><img class="discord" src="./img/discordneon.png"></div>
-            <div class="item -border"><img src="./img/mulhersouls.jpg"></div>
-            <div class="item -border"><img src="./img/luismuitofeio.jpg"></div>
-            <div class="item -joao"><img class="teste-joao" src="./img/mulherfeia.jpg"></div>
-        </div>
-    </main>
+        <main class="main">
+            <div class="container">
+                <div class="item -border" id="discordDiv"><img src="./img/discordneon.png" id="discord"></div>
+                <div class="item -border" id="pauloDiv"><img src="./img/mulhersouls.jpg" id="paulo" onclick="expandirPaulo()"></div>
+                <div class="item -border" id="luisDiv"><img src="./img/luismuitofeio.jpg" id="luis"></div>
+                <div class="item" id="joaoDiv"><img class="teste-joao" src="./img/joaoimg.png" id="joao"></div>
+            </div>
+            <div class="main__popup">
+                <div class="main__popup__column">
+                    <img class="main__popup__column__icon -planet" src="./img/world.png" alt="">
+                    <a href="">Planeta</a>
+                    <img class="main__popup__column__icon -ficha" src="./img/world.png" alt="">
+                    <a href="">Ficha</a>
+                    <img class="main__popup__column__icon -race" src="./img/world.png" alt="">
+                    <a href="">Raça</a>
+                </div>
+                <div class="main__popup__column">
+                    <img class="main__popup__column__icon -class" src="./img/class.png" alt="">
+                    <a href="">Classe</a>
+                    <img class="main__popup__column__icon -system" src="./img/system.webp" alt="">
+                    <a href="">Sistema</a>
+                    <img class="main__popup__column__icon -universe" src="./img/universe.png" alt="">
+                    <a href="">Universo</a>
+                </div>
+            </div>
+        </main>
 </body>
+<script src="./java.js"></script>
 </html>
